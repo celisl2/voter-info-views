@@ -24,7 +24,7 @@ const offsets = {
   DC: [49, 21]
 };
 
-const MapChart = (userClickedState) => {
+const MapChart = ({userClickedState}) => {
   const [currState, setCurrState] = useState(null);
   const [activeColor, setActivecolor] = useState("#b5e48c");
   const currentState = React.useRef(userClickedState);
@@ -33,8 +33,9 @@ const MapChart = (userClickedState) => {
     console.log("currState is: " + JSON.stringify(currState));
     if(currState){
       currentState.current = currState;
+      userClickedState(currState);
     }
-  }, [activeColor, currState]);
+  }, [activeColor, currState, currentState]);
 
   return (
     <ComposableMap projection="geoAlbersUsa" width={1100}>

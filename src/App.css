@@ -89,10 +89,10 @@ p {
 
 .pulseBtn {
   padding: 15px 27px;
-  background-color: #343a40;
+  background-color: #1c2a30;
   color: hsl(243, 80%, 92%);
   border-radius: 50px;
-  box-shadow: 2px 2px 2px 1px rgba(27, 67, 42, .4);
+  box-shadow: 2px 3px 1px 1px rgba(246, 127, 120, .8);
   
   border: none;
   position: absolute;
@@ -102,13 +102,13 @@ p {
 
 .pulseBtn > span > a {
   text-decoration: none;
-  color: #76c893;
+  color: #FFF8F1;
   font-family: 'Rubik', sans-serif;
   font-weight: 1.5;
 }
 
-@keyframes pulse {
-  to {
-    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+@media only screen and (min-width: 800px) {
+  .pulseBtn {
+    top: 56%;
   }
 }

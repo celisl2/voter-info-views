@@ -36,3 +36,79 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: flex;
+  padding: 2%;
+  height: 55vh;
+  align-items: center;
+  background-color: #264653;
+}
+
+.header > h1 {
+  width: 100%;
+  text-align: start;
+  margin: 2%;
+  color: rgb(255, 255, 255);
+  line-height: 1.38;
+  flex-grow: 3;
+  padding-right: 2%;
+}
+
+.header > div > p {
+  margin: auto;
+  padding: 1%;
+  color: #fff;
+  border-left: azure 1px solid;
+  flex-grow: 1;
+  padding-left: 3%;
+}
+
+.highlighted {
+  background: url("./assets/brush-or.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  }
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+}
+
+h4 {
+  font-family: 'Martel', serif;
+}
+p {
+  font-family: 'Rubik', sans-serif;
+}
+.mapArea {
+  background-color: #FFF8F1;
+  padding-top: 10%;
+}
+
+
+.pulseBtn {
+  padding: 15px 27px;
+  background-color: #343a40;
+  color: hsl(243, 80%, 92%);
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px 1px rgba(27, 67, 42, .4);
+  
+  border: none;
+  position: absolute;
+  left: 48%;
+  top: 55%;
+}
+
+.pulseBtn > span > a {
+  text-decoration: none;
+  color: #76c893;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 1.5;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+  }
+}

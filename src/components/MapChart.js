@@ -38,7 +38,7 @@ const MapChart = ({userClickedState}) => {
   }, [activeColor, currState, currentState]);
 
   return (
-    <ComposableMap projection="geoAlbersUsa" width={1100}>
+    <ComposableMap projection="geoAlbersUsa" width={1100} className="mapArea" id="map">
       <Geographies geography={geoUrl}>
         {({ geographies}) => (
           <>

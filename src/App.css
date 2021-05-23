@@ -83,7 +83,7 @@ p {
 }
 .mapArea {
   background-color: #FFF8F1;
-  padding-top: 10%;
+  padding-top: 3%;
 }
 
 
@@ -105,6 +105,22 @@ p {
   color: #FFF8F1;
   font-family: 'Rubik', sans-serif;
   font-weight: 1.5;
+}
+.bill-head {
+  display: flex;
+  justify-content: space-between;
+}
+.bill-head > h4{
+  text-align: start;
+  padding: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.currState {
+  background: url("./assets/brush-gr.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
 }
 
 @media only screen and (min-width: 800px) {
